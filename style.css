@@ -1,0 +1,130 @@
+:root {
+  /* Color */
+  --grey-color: #6f6f71;
+  --black-color: #000000;
+  --blue-color: #4aa6f1;
+  --grey-backcolor: #f2f3f7;
+  --white-color: #ffffff;
+  /* Size */
+  --padding: 12px;
+  --margin: 30px;
+
+  /* Font size */
+  --font-smaller: 10px;
+  --font-small: 12px;
+  --font-medium: 15px;
+  --font-large: 18px;
+  --font-larger: 24px;
+  --font-largest: 36px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* GNB */
+.globalNav {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100%;
+  background-color: var(--grey-backcolor);
+  border: 2px dotted blue;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+}
+
+.globalNav .avatar_img img {
+  width: 175px;
+  height: 175px;
+  margin: var(--margin);
+  border: 2px dotted blue;
+  border-radius: 50%;
+}
+
+.globalNav .avatar_info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--margin);
+}
+
+.globalNav .avatar_info {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.globalNav .avatar_info .name {
+  font-weight: bold;
+  font-size: var(--font-larger);
+  margin-bottom: calc(var(--margin) / 4);
+}
+
+.globalNav .avatar_info .position {
+  font-size: var(--font-large);
+}
+
+.globalNav .menu li {
+  margin-bottom: var(--margin);
+  color: var(--grey-color);
+  font-weight: bold;
+  font-size: var(--font-medium);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.globalNav .menu li:hover {
+  color: var(--blue-color);
+}
+
+.globalNav .sns .icons li {
+  display: inline;
+  margin: 0px calc(var(--margin) / 4);
+}
+
+.globalNav .sns .icons li a {
+  color: var(--blue-color);
+  font-size: var(--font-larger);
+}
+
+.globalNav .copyright {
+  padding-top: calc(var(--padding) * 4);
+  padding-bottom: calc(var(--padding) * 4);
+}
+
+/* Main Contents */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.mainContent .mainSec .mainImg {
+  display: flex;
+}
+
+.mainContent .mainSec .mainImg img {
+  width: 100%;
+  min-width: 800px;
+}
+
+.mainContent .mainSec .mainTxt {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: var(--font-largest);
+  color: var(--white-color);
+}
