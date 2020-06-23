@@ -37,7 +37,7 @@ a {
   background-color: var(--grey-backcolor);
   border: 2px dotted blue;
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0px;
 }
 
@@ -123,8 +123,52 @@ a {
 .mainContent .mainSec .mainTxt {
   display: flex;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 10%;
+  left: 10%;
   font-size: var(--font-largest);
   color: var(--white-color);
+}
+
+.mainContent .aboutMe .aboutMeHeader {
+  display: flex;
+  padding: 200px;
+}
+
+.mainContent .aboutMe .aboutMeHeader .aboutMeImg img {
+  display: flex;
+  margin-right: var(--margin);
+  border: 2px dotted blue;
+  border-radius: 50%;
+}
+
+.mainContent .aboutMe .aboutMeHeader .aboutMeTxt {
+  font-size: var(--font-larger);
+  min-width: 400px;
+}
+
+.mainContent .aboutMe .aboutMeHeader .aboutMeTxt img {
+  display: inline-flex;
+  width: 30px;
+  margin-right: var(--margin);
+}
+
+.mainContent .aboutMe .aboutMeCV {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 200px;
+}
+
+.mainContent .aboutMe .aboutMeCV li {
+  list-style: none;
+}
+
+.mainContent .aboutMe .aboutMeCV .aboutMeEdu .aboutMeEduTitle,
+.mainContent .aboutMe .aboutMeCV .aboutMeWork .aboutMeWorkTitle,
+.mainContent .aboutMe .aboutMeCV .aboutMeWork .aboutMeWorkTitle,
+.mainContent .aboutMe .aboutMeCV .aboutMeProject .aboutMeProjectTitle,
+.mainContent .aboutMe .aboutMeCV .aboutMeCert .aboutMeCertTitle {
+  font-weight: bolder;
+  font-size: var(--font-largest);
+  text-align: center;
+  margin-top: var(--margin);
 }
