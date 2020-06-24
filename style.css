@@ -26,6 +26,7 @@
 
 a {
   text-decoration: none;
+  color: var(--black-color)
 }
 
 /* GNB */
@@ -190,6 +191,69 @@ a {
 text-align: right;
 }
 
+.projects {
+  margin-top:calc(var(--margin)*5); 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.projects .projectTitle {
+  font-size: var(--font-largest);
+  text-align: center;
+}
+
+.projects .projectsClone {
+  display: flex;
+  margin-top: var(--margin);
+  justify-content: center;
+}
+
+.projects .projectsClone .cloneCard {
+  margin: 0px var(--margin);
+  padding-bottom: calc(var(--margin) / 2);
+  text-align: center;
+  border: 1px dotted blue;
+}
+
+.projects .projectsClone .cloneCard .cloneImg {
+  margin-bottom: calc(var(--margin) / 2);
+}
+
+.projects .projectsClone .cloneCard span {
+  text-align: center;
+  font-size: var(--font-large);
+} 
+
+.tes {
+  margin-top: calc(var(--margin)*5); 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tes .tesTitle {
+  text-align: center;
+  font-size: var(--font-largest);
+}
+
+.tes .tesMain {
+  display: flex;
+  margin-top: var(--margin);
+  justify-content: center;
+  margin: 0px calc(var(--margin) * 7);
+  margin-top: var(--margin);
+}
+
+.tes .tesMain .tesImg {
+  margin-right: var(--margin);
+}
+
+.tes .tesMain .tesTxt {
+  font-size: var(--font-large);
+  line-height: 1.7;
+  vertical-align: middle;
+}
+
+.tes .tesMain .tesTxt img {
+  width: 20px;
+}
 
 /*
 .mainContent .aboutMe .aboutMeCV .aboutMeEdu .aboutMeEduTitle,
