@@ -171,8 +171,7 @@ a {
 }
 
 .mainContent .aboutMe .aboutMeCV .aboutMeTitle {
-  font-weight: bolder;
-  font-size: var(--font-largest);
+  font-size: var(--font-larger);
   text-align: center;
   margin-top: var(--margin);
   margin-bottom: calc(var(--margin));
