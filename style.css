@@ -134,6 +134,11 @@ a {
   padding: 200px;
 }
 
+.mainContent .aboutMe .aboutMeHeader2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .mainContent .aboutMe .aboutMeHeader .aboutMeImg img {
   display: flex;
   margin-right: var(--margin);
@@ -162,6 +167,31 @@ a {
   list-style: none;
 }
 
+.mainContent .aboutMe .aboutMeCV .aboutMeTitle {
+  font-weight: bolder;
+  font-size: var(--font-largest);
+  text-align: center;
+  margin-top: var(--margin);
+  margin-bottom: calc(var(--margin));
+  padding-bottom: var(--padding);
+  border-bottom: 1px solid black;
+}
+
+.mainContent .aboutMe .aboutMeCV .aboutMeHeader {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--margin);
+  margin-bottom: calc(var(--margin) / 4);
+}
+
+.mainContent .aboutMe .aboutMeCV .aboutMeHeaderAdd {
+text-align: right;
+}
+
+
+/*
 .mainContent .aboutMe .aboutMeCV .aboutMeEdu .aboutMeEduTitle,
 .mainContent .aboutMe .aboutMeCV .aboutMeWork .aboutMeWorkTitle,
 .mainContent .aboutMe .aboutMeCV .aboutMeWork .aboutMeWorkTitle,
