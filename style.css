@@ -112,17 +112,17 @@ a {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.mainContent .mainSec .mainImg {
+.mainContent #mainSec .mainImg {
   display: flex;
 }
 
-.mainContent .mainSec .mainImg img {
+.mainContent #mainSec .mainImg img {
   width: 100%;
   min-width: 800px;
   filter: grayscale(100%) brightness(20%);
 }
 
-.mainContent .mainSec .mainTxt {
+.mainContent #mainSec .mainTxt {
   display: flex;
   position: absolute;
   top: 120px;
@@ -132,7 +132,7 @@ a {
   line-height: 1.5;
 }
 
-.mainContent .aboutMe .aboutMeHeader {
+.mainContent .aboutMe #aboutMeHeader {
   display: flex;
   padding: 200px;
 }
@@ -142,19 +142,19 @@ a {
   justify-content: space-between;
 }
 
-.mainContent .aboutMe .aboutMeHeader .aboutMeImg img {
+.mainContent .aboutMe #aboutMeHeader .aboutMeImg img {
   display: flex;
   margin-right: var(--margin);
   border: 2px dotted blue;
   border-radius: 50%;
 }
 
-.mainContent .aboutMe .aboutMeHeader .aboutMeTxt {
+.mainContent .aboutMe #aboutMeHeader .aboutMeTxt {
   font-size: var(--font-larger);
   min-width: 400px;
 }
 
-.mainContent .aboutMe .aboutMeHeader .aboutMeTxt img {
+.mainContent .aboutMe #aboutMeHeader .aboutMeTxt img {
   display: inline-flex;
   width: 30px;
   margin-right: var(--margin);
@@ -175,8 +175,8 @@ a {
   text-align: center;
   margin-top: var(--margin);
   margin-bottom: calc(var(--margin));
-  padding-bottom: var(--padding);
-  border-bottom: 1px solid black;
+  padding: var(--padding);
+  border: 1px solid black;
 }
 
 .mainContent .aboutMe .aboutMeCV .aboutMeHeader {
@@ -192,49 +192,49 @@ a {
 text-align: right;
 }
 
-.projects {
-  margin-top:calc(var(--margin)*5); 
+#projects {
+  padding-top:calc(var(--margin)*3); 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.projects .projectTitle {
+#projects .projectTitle {
   font-size: var(--font-largest);
   text-align: center;
 }
 
-.projects .projectsClone {
+#projects .projectsClone {
   display: flex;
   margin-top: var(--margin);
   justify-content: center;
 }
 
-.projects .projectsClone .cloneCard {
+#projects .projectsClone .cloneCard {
   margin: 0px var(--margin);
   padding-bottom: calc(var(--margin) / 2);
   text-align: center;
   border: 1px dotted blue;
 }
 
-.projects .projectsClone .cloneCard .cloneImg {
+#projects .projectsClone .cloneCard .cloneImg {
   margin-bottom: calc(var(--margin) / 2);
 }
 
-.projects .projectsClone .cloneCard span {
+#projects .projectsClone .cloneCard span {
   text-align: center;
   font-size: var(--font-large);
 } 
 
-.tes {
+#tes {
   margin-top: calc(var(--margin)*5); 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.tes .tesTitle {
+#tes .tesTitle {
   text-align: center;
   font-size: var(--font-largest);
 }
 
-.tes .tesMain {
+#tes .tesMain {
   display: flex;
   margin-top: var(--margin);
   justify-content: center;
@@ -242,38 +242,38 @@ text-align: right;
   margin-top: var(--margin);
 }
 
-.tes .tesMain .tesImg {
+#tes .tesMain .tesImg {
   margin-right: var(--margin);
 }
 
-.tes .tesMain .tesTxt {
+#tes .tesMain .tesTxt {
   font-size: var(--font-large);
   line-height: 1.7;
   vertical-align: middle;
 }
 
-.tes .tesMain .tesTxt img {
+#tes .tesMain .tesTxt img {
   width: 20px;
 }
 
-.contacts .contactsMain {
+#contacts .contactsMain {
 margin-top: calc(var(--margin)*5); 
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.contacts .contactsMain .contactTitle {
+#contacts .contactsMain .contactTitle {
   text-align: center;
   font-size: var(--font-largest);
   margin-bottom: var(--margin);
 }
 
-.contacts .contactsMain .contactsEmail,
-.contacts .contactsMain .contactInfo {
+#contacts .contactsMain .contactsEmail,
+#contacts .contactsMain .contactInfo {
   text-align: center;
   ;
 }
 
-.contacts .contactsMain .contactInfo {
+#contacts .contactsMain .contactInfo {
   margin-top: calc(var(--margin) / 3);
   margin-bottom: 150px;
 }

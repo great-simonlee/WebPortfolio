@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/2c6bbdb178.js"
       crossorigin="anonymous"
     ></script>
+    <script src="port.js"></script>
   </head>
   <body>
     <!-- GNB -->
@@ -24,12 +25,12 @@
       </div>
       <!-- Menu -->
       <ul class="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About Me</li></a>
-        <a href="#"><li>Projects</li></a>
-        <a href="#"><li>Testimonials</li></a>
+        <a href="#mainSec"><li>Home</li></a>
+        <a href="#aboutMeHeader"><li>About Me</li></a>
+        <a href="#projects"><li>Projects</li></a>
+        <a href="#tes"><li>Testimonials</li></a>
         <a href="#"><li>Resources</li></a>
-        <a href="#"><li>Contacts</li></a>
+        <a href="#contacts"><li>Contacts</li></a>
       </ul>
       <!-- SNS Buttons -->
       <div class="sns">
@@ -57,7 +58,7 @@
     <!-- Main Contents -->
     <section class="mainContent">
       <!-- Main Intro -->
-      <div class="mainSec">
+      <div id="mainSec">
         <div class="mainImg"><img src="src/main.jpg" alt="mainImg" /></div>
         <span class="mainTxt"
           >I'm ...<br /><br /><br />
@@ -68,7 +69,7 @@
         >
       </div>
       <div class="aboutMe">
-        <div class="aboutMeHeader">
+        <div id="aboutMeHeader">
           <div class="aboutMeImg">
             <img src="src/project1.PNG" alt="aboutMeImg" />
           </div>
@@ -84,45 +85,30 @@
             <img src="src/quo2.PNG" alt="quo2" />
           </div>
         </div>
-        <div class="aboutMeDes"><span></span></div>
         <div class="aboutMeCV">
           <div class="aboutMeEdu">
-            <div class="aboutMeTitle"><span>Eduction</span></div>
-            <div class="aboutMeHeader">
-              <span
-                >Northeastern University<br /><em
-                  >Master of Science in Project Management</em
-                ></span
-              >
-              <span class="aboutMeHeaderAdd"
-                >Boston, USA<br />Sep 2017 - August 2019</span
-              >
-            </div>
-            <div class="aboutMeContent">
-              <ul>
-                <li>• Project Scope Management</li>
-                <li>• Project Schedule Management</li>
-                <li>• Project Cost Management</li>
-                <li>• Project Risk Management</li>
-              </ul>
-            </div>
-            <div class="aboutMeHeader">
-              <span
-                >Beijing University<br /><em
-                  >Bachelor of Business Administration in Marketing</em
-                ></span
-              >
-              <span class="aboutMeHeaderAdd"
-                >Beijing, China<br />Sep 2009 - August 2016</span
-              >
-            </div>
-            <div class="aboutMeContent">
-              <ul>
-                <li>• Economics</li>
-                <li>• Marketing</li>
-                <li>• Corporate Finance</li>
-                <li>• Entreneurship</li>
-              </ul>
+            <div class="aboutMeTitle" onclick="showText()"><span>Eduction</span></div>
+            <div id="aboutMeEduText">
+              <div class="aboutMeEduHeader">
+                <span
+                  >Northeastern University<br /><em
+                    >Master of Science in Project Management</em
+                  ></span
+                >
+                <span class="aboutMeHeaderAdd"
+                  >Boston, USA<br />Sep 2017 - August 2019</span
+                >
+              </div>
+              <div class="aboutMeHeader">
+                <span
+                  >Beijing University<br /><em
+                    >Bachelor of Business Administration in Marketing</em
+                  ></span
+                >
+                <span class="aboutMeHeaderAdd"
+                  >Beijing, China<br />Sep 2009 - August 2016</span
+                >
+              </div>
             </div>
           </div>
           <div class="aboutMeWork">
@@ -280,7 +266,9 @@
           <div class="aboutMeSkill"></div>
         </div>
       </div>
-      <div class="projects">
+
+      <!-- Main_Projects -->
+      <div id="projects">
         <div class="projectTitle"><span>Projects</span></div>
         <div class="projectsClone">
           <div class="cloneCard">
@@ -305,7 +293,9 @@
         <div class="projectsWeb"></div>
         <div class="projectsML"></div>
       </div>
-      <div class="tes">
+
+      <!-- Main_Testimonials -->
+      <div id="tes">
         <div class="tesTitle">Testimonials</div>
         <div class="tesMain">
           <div class="tesImg"><img src="src/testinomials.PNG" alt="" /></div>
@@ -320,8 +310,12 @@
           </div>
         </div>
       </div>
+
+      <!-- Main_Resources -->
       <div class="resources"></div>
-      <div class="contacts">
+
+      <!-- Main_Contaces -->
+      <div id="contacts">
         <div class="contactsMain">
           <div class="contactTitle">Contact</div>
           <div class="contactsEmail">
